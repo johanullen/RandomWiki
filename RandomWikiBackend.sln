@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomWikiBackend", "RandomWikiBackend\RandomWikiBackend.csproj", "{4931A913-8241-4F08-9CE6-AB8B81B7D578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomWikiBackend.Tests", "RandomWikiBackend.Tests\RandomWikiBackend.Tests.csproj", "{D21B77D3-F4F0-4EEF-85F5-74C9F7321B91}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{4931A913-8241-4F08-9CE6-AB8B81B7D578}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4931A913-8241-4F08-9CE6-AB8B81B7D578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4931A913-8241-4F08-9CE6-AB8B81B7D578}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D21B77D3-F4F0-4EEF-85F5-74C9F7321B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D21B77D3-F4F0-4EEF-85F5-74C9F7321B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D21B77D3-F4F0-4EEF-85F5-74C9F7321B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D21B77D3-F4F0-4EEF-85F5-74C9F7321B91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

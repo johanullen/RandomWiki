@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace RandomWikiBackend.Controllers
+namespace WebApiAngularJsUploader.Controllers
 {
     public class HomeController : Controller
     {

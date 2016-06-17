@@ -1,0 +1,47 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <!--Sidebar content-->
+            
+            <p>
+                Search:
+                <input ng-model="$ctrl.query">
+            </p>
+
+            <p>
+                Sort by:
+                <select ng-model="$ctrl.orderProp">
+                    <option value="uri">URI</option>
+                    <option value="category">Category</option>
+                </select>
+            </p>
+
+            <p>
+                 <button ng-click="$ctrl.randomize()">Generate 10</button>
+            </p>
+
+            <p>
+                <button ng-click="$ctrl.clear()">Clear</button>
+            </p>
+
+        </div>
+        <div class="col-md-3">
+            <!--Body content-->
+
+            <ul class="pages">
+                <li ng-repeat="page in $ctrl.pages | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+                    <p>
+                        <a ng-click="$ctrl.setUri(page.uri)">{{page.uri}}</a>
+                    </p>
+                    <p>
+                        <input ng-model="page.category"><button ng-click="$ctrl.updateCategory(page)">Update</button>
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-md-7">
+            <iframe ng-src="{{$ctrl.safeUri}}" style="width:100%;height:1000px"></iframe>
+        </div>
+    </div>
+</div>
